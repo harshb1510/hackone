@@ -10,9 +10,9 @@ import Transactions from './components/Transactions';
 const App = () => {
     return (
         <Router>
-            <div className="flex bg-black">
+            <div className="flex bg-black"> 
                 <Sidebar />
-                <div className="flex-grow p-4 ml-64"> {/* Added ml-64 for 64px margin on the left */}
+                <div className="flex-grow ml-64"> {/* Added ml-64 for 64px margin on the left */}
                     <Routes>
                         <Route path="/"  element={<Dashboard/>} />
                         <Route path='/investments' element={<Investments/>}/>

@@ -1,5 +1,6 @@
 // src/components/Dashboard.js
 import React from 'react';
+import video from "../assets/dashboard.mp4"
 
 const Dashboard = () => {
     return (
@@ -12,12 +13,8 @@ const Dashboard = () => {
             <h1 className="text-4xl font-bold mb-6">Overview Dashboard</h1>
             
             <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-purple-900 p-6 rounded-lg shadow-lg">
-                    <img 
-                        src="https://via.placeholder.com/600x300.png?text=Top+10+Crypto+Ad+Networks+in+2023" 
-                        alt="Top 10 Crypto Ad Networks in 2023" 
-                        className="w-full h-full object-cover rounded-lg"
-                    />
+                <div className=" p-2 rounded-lg shadow-lg">
+                    <video src={video} autoPlay loop muted className="w-full h-auto rounded-lg"/>
                 </div>
                 <div className="bg-gray-800 p-6 rounded-lg shadow-lg flex items-center justify-center">
                     <div className="text-center">
